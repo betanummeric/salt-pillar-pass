@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
 
-# Import salt modules
-#import salt.loader
-#import salt.utils.minions
 import subprocess
 import yaml
 import re
