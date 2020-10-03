@@ -1,6 +1,6 @@
 # salt-pillar-pass
 
-This is an external pillar for salt that offers [pass](https://passwordstore.org) as storage for pillar data.
+This is an [external pillar](https://docs.saltstack.com/en/latest/topics/development/modules/external_pillars.html) for [salt](https://docs.saltstack.com/) that offers [pass](https://passwordstore.org) as storage for pillar data.
 
 ## Installation
 
@@ -20,5 +20,5 @@ You don't need to include something in your `top.sls` at your `pillar_roots`.
 
 edit/create a secret: `pass edit <prefix>/<minon_id>`
 
-check, what the minion sees: `salt <minion_id> pillar.get pass`--out=yaml`
+check, what the minion sees: `salt <minion_id> pillar.get pass --out=yaml`
 
