@@ -29,5 +29,5 @@ def read_pass(minion_id, CONFIG):
     if err and err != "":
       raise Exception(f"invoking pass failed:\n{err}")
     yaml_pillar = proc.stdout.read()
-  return yaml.load(yaml_pillar)
+  return yaml.load(yaml_pillar, Loader=yaml.SafeLoader)
 
